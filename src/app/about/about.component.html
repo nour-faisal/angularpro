@@ -1,0 +1,53 @@
+
+<h1>this is about page</h1>
+<img src="../../assets/image/Koala.jpg">
+<p>my name is nour zarouq is acreativ front end developer</p>
+<app-contact-us></app-contact-us>
+<!-- {{tittle}}
+{{3+5}} -->
+<!-- <button (click)='btnClick()'>submit</button>
+<p *ngFor='let obj of data'>{{obj.id}} - {{obj.name}}</p> -->
+<!-- <p *ngFor='let index of data'>{{index.id}} - {{index.name}}</p>
+<button (click)='btnAdd()'>Add</button> -->
+<!-- <label>Please Enter Your Name:</label>
+<input #nameInput type=text (keyup.enter)='clickEnter($event.target)' />
+<button (click)="clickEnter(nameInput)" >Add name</button>
+<ul *ngFor='let index of dataList'>
+<li>
+    <td>{{index.name}}</td>
+</li>
+
+<div [ngSwitch]= 'x'>
+    <p *ngSwitchCase='1'>one</p>
+    <p *ngSwitchCase='2'>two</p>
+    <p *ngSwitchCase='3'>three</p>
+    <p *ngSwitchDefult>defult unKnown</p>
+</div>
+ -->
+
+    <label>
+        ProductName:
+    </label>
+    <input type="text" [(ngModel)]= "newField.proName"/>
+    <label>ProductPrice:</label>
+    <input type="text" [(ngModel)]= "newField.proPrice"/> 
+    <label>ProductQuantity:</label>
+    <input type="text" [(ngModel)]= "newField.proQuantity"/> 
+    <button (click)='btnAddPro()'>Add Product</button>    
+
+<table>
+        <tr>
+            <th>Productname</th>
+            <th>Productprice</th>
+            <th>Quantity</th>
+        </tr>
+    <tr *ngFor= 'let item of dataPro'>
+        <td>{{item.proName}}</td>
+        <td>{{item.proPrice}}</td>
+        <td>{{item.proQuantity}}</td>
+    </tr>
+</table>
+
+
+
+        
