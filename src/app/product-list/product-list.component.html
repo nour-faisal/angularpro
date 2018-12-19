@@ -1,0 +1,10 @@
+<h1>
+  product-list!
+</h1>
+<ul>
+  <li (click)="onSelect(item)" *ngFor = 'let item of proItems'>
+    <span>{{item.id}}-{{item.title}}</span>
+    
+  </li>
+</ul>
+
